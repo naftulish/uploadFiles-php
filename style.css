@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+}
+
+.red{
+    border: 1px solid red;
+}
+
+.form-control{
+    margin-top: 25px;
+}
+
+.emptyFiledsAlerts{
+    float: left;
+    font-size: 0.8em;
+}
+
+h6#log_in{
+    cursor: pointer;
+}
+
+.container{
+    margin-top: 150px;
+    max-width: 540px;
+}
+
+.checkbox-inline{
+    margin-top: 10px;
+}
+
+.inputfile{
+    display: none;
+}
+
+.file{
+    background: #80beff;
+    cursor: pointer;
+}
+
+.file:hover{
+    background: #17386a;
+    color: white;
+}
+
+img{
+    width: 90%;
+}
