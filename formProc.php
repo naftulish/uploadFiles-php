@@ -22,7 +22,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     if($_POST["email"]==""){
         $errors["email"]="Please enter a email";
     }else{
-        $email=htmlspecialchars($_POST["email"]);
+        if(filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+            $email=htmlspecialchars($_POST["email"]);
+        }else{
+            $errors["email"]="Invalid email address";
+        }
     }
 
     if($_FILES["file"]['name']==""){
@@ -57,6 +61,7 @@ if($user_name && $email && $file){
 
     if($file_upload_seccses){
         $_SESSIEN['is_upload'] = true;
+
     }
 
 
