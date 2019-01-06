@@ -2,7 +2,7 @@ document.querySelector("#btn").addEventListener("click",function(){
      let un = document.querySelector("input[name='userName']").value;
      let ue = document.querySelector("input[name='email']").value;
      let uf = document.querySelector("input[name='file']").value;
-     if(un && ue && uf){
+     if(un || ue || uf){
          document.querySelector("#btn").innerHTML += '  <i class="fa fa-spinner fa-spin" style="font-size:15px">';
      }
 
