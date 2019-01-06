@@ -26,7 +26,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             $email=htmlspecialchars($_POST["email"]);
         }else{
             $errors["email"]="Invalid email address";
-            echo $email;
         }
     }
 
